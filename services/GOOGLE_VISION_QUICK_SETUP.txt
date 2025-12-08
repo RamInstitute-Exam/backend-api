@@ -1,0 +1,43 @@
+═══════════════════════════════════════════════════════════════
+  Google Cloud Vision API - Quick Setup Guide
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Get Your API Key (2 minutes)
+─────────────────────────────────────
+1. Go to: https://console.cloud.google.com/apis/credentials
+2. Click "CREATE CREDENTIALS" → "API key"
+3. Copy the API key (starts with "AIza...")
+
+STEP 2: Enable Vision API (1 minute)
+─────────────────────────────────────
+1. Go to: https://console.cloud.google.com/apis/library
+2. Search for "Cloud Vision API"
+3. Click "Enable"
+
+STEP 3: Add to Your Project (1 minute)
+───────────────────────────────────────
+1. Open: backend/.env file
+2. Add this line:
+   GOOGLE_VISION_API_KEY=your_api_key_here
+3. Replace "your_api_key_here" with your actual key
+4. Save the file
+
+STEP 4: Test It (1 minute)
+───────────────────────────
+Run this command:
+   node services/test-google-vision.js path/to/test-image.png
+
+═══════════════════════════════════════════════════════════════
+  That's It! Google Vision will now be used automatically
+  when Tesseract results are poor.
+═══════════════════════════════════════════════════════════════
+
+FREE TIER:
+  • 1,000 requests per month (FREE)
+  • $1.50 per 1,000 images after free tier
+
+NEED HELP?
+  See: backend/services/GOOGLE_VISION_SETUP.md
+
+═══════════════════════════════════════════════════════════════
+

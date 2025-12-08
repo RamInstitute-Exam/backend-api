@@ -1,0 +1,19 @@
+# Python dependencies for PDF extraction
+# Install with: pip install -r requirements.txt
+
+# PyMuPDF (fitz) - Fast and excellent Unicode/Tamil support (RECOMMENDED)
+pymupdf>=1.23.0
+
+# pdfplumber - Alternative PDF library (good for structured content)
+pdfplumber>=0.10.0
+
+# FastAPI for Python API server
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# OCR libraries for Tamil text extraction from image-based PDFs
+pytesseract>=0.3.10
+Pillow>=10.0.0
+easyocr>=1.7.0
+
