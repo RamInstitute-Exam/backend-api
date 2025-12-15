@@ -103,8 +103,8 @@ process.on('uncaughtException', (error) => {
 });
 
 // Start Server
-// const PORT = process.env.PORT || 5001;
-const PORT = 5001;
+// Use Render's provided PORT in production; fall back to 5001 for local dev
+const PORT = process.env.PORT || 5001;
 app.listen(PORT, async () => {
   console.log(`Server running on PORT ${PORT}`);
   await DBConnect();
