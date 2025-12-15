@@ -44,7 +44,8 @@ app.use(
       'https://institute-exam.vercel.app',
       'https://institute-exam-d4kz-beta.vercel.app',
       'https://ram-institute-frontend.vercel.app',
-      'http://institute-frontend.s3-website.ap-south-1.amazonaws.com'
+      'http://institute-frontend.s3-website.ap-south-1.amazonaws.com',
+      "https://frontend-mu-sepia-48.vercel.app"
     ],  
     credentials: true 
   })
